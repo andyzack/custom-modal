@@ -121,12 +121,12 @@ class CustomModal extends HTMLElement {
 	_hideModal() {
 		this._modalVisible = false;
 		this._modal.style.display = 'none';
-		this.shadowRoot.querySelector(".modal-results").innerHTML = 'You just click "Cancel"';
+		this.shadowRoot.querySelector(".modal-results").innerHTML = '<span style="color:#d9534f">You just click "Cancel"</span>';
 	}
 	_submitModal() {
 		this._modalVisible = false;
 		this._modal.style.display = 'none';
-		this.shadowRoot.querySelector(".modal-results").innerHTML = 'You just click "Yes"';
+		this.shadowRoot.querySelector(".modal-results").innerHTML = '<span style="color:#2e81da">You just click "Yes"</span>';
 	}
 }
 customElements.define('sitemate-modal',CustomModal);
