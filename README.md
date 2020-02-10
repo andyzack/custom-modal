@@ -9,3 +9,7 @@
     <h1 slot="header">Information Box</h1>
     some text
     </sitemate-modal>
+
+References:
+https://developer.mozilla.org/en-US/docs/Web/Web_Components
+https://www.webcomponents.org/introduction

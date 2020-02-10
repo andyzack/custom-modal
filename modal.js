@@ -112,6 +112,7 @@ class CustomModal extends HTMLElement {
 	disconnectedCallback() {
 		this.shadowRoot.querySelector("button").removeEventListener('click', this._showModal);
 		this.shadowRoot.querySelector(".close").removeEventListener('click', this._hideModal);
+		this.shadowRoot.querySelector(".submit").removeEventListener('click', this._submitModal);
 	}
 	_showModal() {
 		this._modalVisible = true;
