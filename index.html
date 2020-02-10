@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    body {
+      background-color: #fff;
+      color: #6e859e;
+      font-family: "Open Sans",sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.45;
+      padding: 0;
+      word-wrap: break-word;
+      text-align: center;
+    }
+    .page {
+      padding: 60px 20px 20px;
+    }
+    h2, h3 {
+      margin: 12px; padding: 0;
+    }
+  </style>
+  <script src="./modal.js"></script>
+  <title>Sitemate: Modal Dialog Sample</title>
+</head>
+<body>
+  <div class="page">
+    <h2>Main Page</h2>
+    <sitemate-modal>
+      <h3 slot="header">Confirmation Message</h3>
+      <p slot="message">Are you sure you want to continue?</p>
+    </sitemate-modal>
+  </div>
+</body>
+</html>
